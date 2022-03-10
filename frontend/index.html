@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Meta Data -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deal-Eco</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!-- Stlylesheet -->
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" href="" type="text/css" />
+<link rel="stylesheet" href="css/font-awesome/css/font-awesome.css" type="text/css" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/no-ui-slider/jquery.nouislider.css" type="text/css" />
+<link rel="stylesheet" href="css/multistep.css" id="multiStep-form"/>
+<link rel="stylesheet" href="css/radio-btns.css" id="radio-btns"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800&display=swap" rel="stylesheet"/>
+<!-- Multistepper radio buttons (Line Awesome) CDN Link -->
+<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+<!-- Skin Color -->
+<link rel="stylesheet" href="css/colors/green.css" id="color-skins"/>
+</head>
+<body>
+
+<!-- Start Header -->
+<header>
+   <nav class="navbar navbar-default navbar-alt" role="navigation">
+      <div class="container">
+         <!-- Brand and toggle get grouped for better mobile display -->
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand to-top" rel="home" href="#">
+               <!-- <img src="img/assets/logo-white.png" alt="Visual" class="logo-big">
+               <img src="img/assets/logo-dark.png" alt="Visual" class="logo-small"> -->
+               <img src="img/assets/logo-dealeco.png" alt="Visual" class="logo-big">
+               <img src="img/assets/logo-dealeco.png" alt="Visual" class="logo-small">
+            </a>
+         </div>
+         
+         <!-- Collect the nav links, forms, and other content for toggling -->
+         <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="nav navbar-nav  navbar-right">
+               <li>
+                  <a class="to-top">
+                     Acceuil
+                  </a>
+               </li>
+               <li class="to-section">
+                  <a href="#about">
+                     Nos engagements
+                  </a>
+               </li>
+               <li class="to-section">
+                  <a href="#price-list">
+                     Nos tarifs
+                  </a>
+               </li>
+               <li class="to-section">
+                  <a href="#portfolio">
+                     Equipe Deal-Eco
+                  </a>
+               </li>
+               <li class="to-section">
+                  <a href="#contact">
+                     Contacter-nous
+                  </a>
+               </li>
+            </ul>
+         </div>
+         <!-- /.navbar-collapse -->
+         <!-- Multistepper was here -->
+      </div>
+      <!-- /.container -->
+   </nav>
+</header>
+<!-- End Header -->
+
+<!-- Start Home Revolution Slider Parallax Section -->
+<section id="home-revolution-slider">
+   <!-- MultiStep Form -->
+   <div id="stepper-container">
+      <div id="stepper" class="row">
+         <div class="col-md-6 col-md-offset-3">
+            <form id="msform">
+               <!-- progressbar -->
+               <ul id="progressbar">
+                     <li class="active">Infos domicile</li>
+                     <li>Type de chauffage</li>
+                     <li>Vos coordonnées</li>
+               </ul>
+               <!-- fieldsets -->
+               <fieldset>
+                     <h2 class="fs-title">Demander votre devis GRATUITEMENT !</h2>
+                     <h3 class="fs-subtitle">Veuillez choisir ce qui vous décris le plus</h3> </br>
+                     <!-- House / Appart --> 
+                     <p style="text-align:left">Type de logement : </p>                       
+                     <div class="middle">
+                        <label><input type="radio" id="maison" name="logement" value="maison" checked/><div class="house box"><span>Maison</span></div></label>
+                        <label><input type="radio" id="appartement" name="logement" value="appartement" ><div class="house box"><span>Appartement</span></div></label>
+                     </div>
+                     <!-- Prop / locat --></br> 
+                     <p style="text-align:left">Vous êtes : </p>
+                     <div class="middle">
+                        <label><input type="radio" id="proprietaire" name="prop-loc" value="proprietaire" checked/><div class="owner box"><span>Propriétaire</span></div></label>
+                        <label><input type="radio" id="locataire" name="prop-loc" value="locataire" ><div class="tenant box"><span>Locataire</span></div></label>
+                     </div>
+                     <!-- Zip -->
+                     <input type="text" name="zip" placeholder="Code postale"/>
+                     <!--
+                     <input type="text" name="fname" placeholder="Code postale"/>
+                     <input type="text" name="fname" placeholder="Code postale"/>
+                     <input type="text" name="lname" placeholder="Last Name"/>
+                     <input type="text" name="phone" placeholder="Phone"/>-->
+                     <input id="cancel" type="button" name="cancel" class=" action-button-previous" value="Annuler"/>
+                     <input type="button" name="next" class="next action-button " id="next_1"  value="Suivant"/>
+                     
+               </fieldset>
+               <fieldset>
+                     <h2 class="fs-title">Social Profiles</h2>
+                     <h3 class="fs-subtitle">Your presence on the social network</h3>
+                     <!-- Heating equipement -->
+                     <p>Type de chauffage : </p>
+                     <div class="middle">
+                        <!-- <input type="radio" id="electrique" name="chauffage" value="electrique"><label for="electrique">Electrique</label>
+                        <input type="radio" id="gaz" name="chauffage" value="gaz"><label for="gaz">Gaz</label>
+                        <input type="radio" id="fioul" name="chauffage" value="fioul"><label for="fioul">Fioul</label>
+                        <input type="radio" id="autre" name="chauffage" value="autre"><label for="autre">Autre</label> -->
+
+
+                        <label><input type="radio" id="electrique" name="chauffage" value="electrique" checked/><div class="owner box"><span>Electrique</span></div></label>
+                        <label><input type="radio" id="gaz" name="chauffage" value="gaz" ><div class="tenant box"><span>Gaz</span></div></label>
+                        <label><input type="radio" id="fioul" name="chauffage" value="fioul" /><div class="owner box"><span>Fioul</span></div></label>
+                        <label><input type="radio" id="autre" name="chauffage" value="autre" ><div class="tenant box"><span>Autre</span></div></label>
+                     </div>
+                     <!-- Heating equipement -->
+                     <input type="text" name="surface" placeholder="Surface à chauffer"/>
+                     <!-- Heating equipement -->
+                     <input type="text" name="montant" placeholder="Montant facture énergétique en €"/>
+                     <input type="button" name="previous" class="previous action-button-previous" value="Précedent"/>
+                     <input type="button" name="next" class=" next action-button" id="next_2" value="Suivant"/>
+               </fieldset>
+               <fieldset>
+                     <h2 class="fs-title">Create your account</h2>
+                     <h3 class="fs-subtitle">Fill in your credentials</h3>
+                     <input type="text" name="lastname" placeholder="Nom"/>
+                     <input type="text" name="firstname" placeholder="Prénom"/>
+                     <input type="text" name="email" placeholder="Email"/>
+                     <input type="text" name="tel" placeholder="Tel"/>
+                     <input type="button" name="previous" class="previous action-button-previous" value="Précedent"/>
+                     <input type="submit" id="submit_form" name="submit" class="submit action-button" value="Envoyer"/>
+               </fieldset>
+            </form>
+         </div>
+      </div>
+   </div>
+   <!-- /.MultiStep Form -->
+   <div class="hero">
+      <div class="tp-banner-container">
+         <div class="tp-banner">
+            
+            <ul>
+               <!-- SLIDE 1 -->
+               <li data-transition="fade" data-slotamount="7" data-masterspeed="2000" data-thumb="img/backgrounds/man-worker-solar-panels-bg-3.jpg data-delay="10000" data-saveperformance="on" data-title="Deal-Eco">
+                  <img src="img/backgrounds/man-worker-solar-panels-bg-3.jpg" alt="slidebg1" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                  
+                  <!-- Home Heading -->
+                  <div class="tp-caption sft"
+                                        data-x="center"  
+                                        data-y="260"
+                                        data-speed="1200"
+                                        data-start="1100"
+                                        data-easing="Power3.easeInOut"
+                                        data-splitin="none"
+                                        data-splitout="none"
+                                        data-elementdelay="0.1"
+                                        data-endelementdelay="0.1"
+                                        data-endspeed="300"
+                                        style="z-index: 4; max-width: auto; max-height: auto; white-space:normal;">
+                     <h2 class="home-heading op-1">LA RÉFÉRENCE BORDELAISE</h2>
+                  </div>
+                  <!-- Home Subheading -->
+                  <div class="tp-caption home-subheading sft "
+                                        data-x="center" 
+                                        data-y="360" 
+                                        data-speed="1200"
+                                        data-start="1350"
+                                        data-easing="Power3.easeInOut"
+                                        data-splitin="none"
+                                        data-splitout="none"
+                                        data-elementdelay="0.1"
+                                        data-endelementdelay="0.1"
+                                        data-endspeed="300"
+                                        style="z-index: 4; max-width: auto; max-height: auto; white-space:normal;">
+                     <div class="op-1">50% DE RÉDUCTION OU CRÉDIT D'IMPÔTS*</div>
+                  </div>
+                  <!-- Home Button -->
+                  <div class="tp-caption home-button sft fadeout"
+                                        data-x="center" 
+                                        data-y="400" 
+                                        data-speed="1200"
+                                        data-start="1550"
+                                        data-easing="Power3.easeInOut"
+                                        data-splitin="none"
+                                        data-splitout="none"
+                                        data-elementdelay="0.1"
+                                        data-endelementdelay="0.1"
+                                        data-endspeed="300"
+                                        style="z-index: 4; max-width: auto; max-height: auto; white-space:normal;">
+                     <div class="op-1">
+                        <a class="btn btn-primary btn-scroll devis">
+                           Demander votre devis GRATUITEMENT
+                        </a>
+                     </div>
+                  </div>
+               </li>
+               <!-- /.SLIDE 1 -->
+               
+               <!-- SLIDE 2 -->
+               <li data-transition="fade" data-slotamount="7" data-masterspeed="2000" data-thumb="img/backgrounds/man-worker-solar-panels-bg-2.jpg" data-delay="10000" data-saveperformance="on" data-title="Deal-Eco">
+                  <img src="img/backgrounds/man-worker-solar-panels-bg-2.jpg" alt="slidebg1" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                  
+                  <!-- Home Heading -->
+                  <div class="tp-caption sft"
+                                        data-x="center"  
+                                        data-y="260"
+                                        data-speed="1200"
+                                        data-start="1100"
+                                        data-easing="Power3.easeInOut"
+                                        data-splitin="none"
+                                        data-splitout="none"
+                                        data-elementdelay="0.1"
+                                        data-endelementdelay="0.1"
+                                        data-endspeed="300"
+                                        style="z-index: 4; max-width: auto; max-height: auto; white-space:normal;">
+                     <h2 class="home-heading op-1">Slide 2</h2>
+                  </div>
+                  <!-- Home Subheading -->
+                  <div class="tp-caption home-subheading sft "
+                                        data-x="center" 
+                                        data-y="360" 
+                                        data-speed="1200"
+                                        data-start="1350"
+                                        data-easing="Power3.easeInOut"
+                                        data-splitin="none"
+                                        data-splitout="none"
+                                        data-elementdelay="0.1"
+                                        data-endelementdelay="0.1"
+                                        data-endspeed="300"
+                                        style="z-index: 4; max-width: auto; max-height: auto; white-space:normal;">
+                     <div class="op-1">Chauffage / Climatisation Energies renouvelables</div>
+                  </div>
+                  <!-- Home Button -->
+                  <div class="tp-caption home-button sft fadeout"
+                                        data-x="center" 
+                                        data-y="400" 
+                                        data-speed="1200"
+                                        data-start="1550"
+                                        data-easing="Power3.easeInOut"
+                                        data-splitin="none"
+                                        data-splitout="none"
+                                        data-elementdelay="0.1"
+                                        data-endelementdelay="0.1"
+                                        data-endspeed="300"
+                                        style="z-index: 4; max-width: auto; max-height: auto; white-space:normal;">
+                     <div class="op-1">
+                        <a class="btn btn-primary btn-scroll devis">
+                           Demander votre devis GRATUITEMENT
+                        </a>
+                     </div>
+                  </div>
+               </li>
+               <!-- /.SLIDE 2 -->
+               <!-- SLIDE 3 -->
+               <li data-transition="fade" data-slotamount="7" data-masterspeed="2000" data-thumb="img/backgrounds/man-worker-solar-panels-bg-1.jpg" data-delay="10000" data-saveperformance="on" data-title="Deal-Eco">
+                  <img src="img/backgrounds/man-worker-solar-panels-bg-1.jpg" alt="slidebg1" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                  
+                  <!-- Home Heading -->
+                  <div class="tp-caption sft"
+                                        data-x="center"  
+                                        data-y="260"
+                                        data-speed="1200"
+                                        data-start="1100"
+                                        data-easing="Power3.easeInOut"
+                                        data-splitin="none"
+                                        data-splitout="none"
+                                        data-elementdelay="0.1"
+                                        data-endelementdelay="0.1"
+                                        data-endspeed="300"
+                                        style="z-index: 4; max-width: auto; max-height: auto; white-space:normal;">
+                     <h2 class="home-heading op-1">Slide 3</h2>
+                  </div>
+                  <!-- Home Subheading -->
+                  <div class="tp-caption home-subheading sft "
+                                        data-x="center" 
+                                        data-y="360" 
+                                        data-speed="1200"
+                                        data-start="1350"
+                                        data-easing="Power3.easeInOut"
+                                        data-splitin="none"
+                                        data-splitout="none"
+                                        data-elementdelay="0.1"
+                                        data-endelementdelay="0.1"
+                                        data-endspeed="300"
+                                        style="z-index: 4; max-width: auto; max-height: auto; white-space:normal;">
+                     <div class="op-1">Chauffage / Climatisation Energies renouvelables</div>
+                  </div>
+                  <!-- Home Button -->
+                  <div class="tp-caption home-button sft fadeout"
+                                        data-x="center" 
+                                        data-y="400" 
+                                        data-speed="1200"
+                                        data-start="1550"
+                                        data-easing="Power3.easeInOut"
+                                        data-splitin="none"
+                                        data-splitout="none"
+                                        data-elementdelay="0.1"
+                                        data-endelementdelay="0.1"
+                                        data-endspeed="300"
+                                        style="z-index: 4; max-width: auto; max-height: auto; white-space:normal;">
+                     <div class="op-1">
+                        <a class="btn btn-primary btn-scroll devis">
+                           Demander votre devis GRATUITEMENT
+                        </a>
+                     </div>
+                  </div>
+               </li>
+               <!-- /. SLIDE 3 -->
+            </ul>
+            <div class="tp-bannertimer"></div>
+         </div>
+         <div class="home-bottom">
+            <div class="container text-center">
+               <!-- Down arrow -->
+               <div class="move bounce">
+                  <a href="#features" class="ion-ios-arrow-down btn-scroll"></a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!-- End Home Revolution Slider Parallax Section -->
+
+<div class="site-wrapper content">
+   
+   <!-- Start Features Section -->
+   <section id="features">
+      <div class="container">
+         <div class="col-md-12 text-center wow fadeInUp">
+            <h3 class="section-title">Nos prestations</h3>
+            <p class="subheading">Nos domaines d'intervention pour <span class="highlight">embellir la vie</span>.</p>
+         </div>
+         <div class="row features-row wow fadeInUp">
+            <div class="col-md-4 col-sm-12 feature-column">
+               <div class="feature-icon">
+                  <!-- <i class="icon-eyeglasses size-2x highlight"></i> -->
+                  <!-- <i class="icon-eyeglasses back-icon"></i> -->
+                  <img src="/frontend/img/assets/vaccume-cleaner.png" alt="">
+               </div>
+               <div class="feature-info">
+                  <h4>Ménage & entretien</h4>
+                  <p class="feature-description">
+                     Du sol au plafond, coins et recoins en douceur mais sans ménagement ! Selon vos recommandations votre intervenante se charge de l'ensemble de votre intérieur.</p>
+               </div>
+            </div>
+            <div class="col-md-4 col-sm-12 feature-column">
+               <div class="feature-icon">
+                  <!-- <i class="icon-eyeglasses size-2x highlight"></i> -->
+                  <!-- <i class="icon-eyeglasses back-icon"></i> -->
+                  <img src="/frontend/img/assets/vaccume-cleaner.png" alt="">
+               </div>
+               <div class="feature-info">
+                  <h4>Ménage & entretien</h4>
+                  <p class="feature-description">
+                     Du sol au plafond, coins et recoins en douceur mais sans ménagement ! Selon vos recommandations votre intervenante se charge de l'ensemble de votre intérieur.</p>
+               </div>
+            </div>
+            <div class="col-md-4 col-sm-12 feature-column">
+               <div class="feature-icon">
+                  <!-- <i class="icon-eyeglasses size-2x highlight"></i> -->
+                  <!-- <i class="icon-eyeglasses back-icon"></i> -->
+                  <img src="/frontend/img/assets/vaccume-cleaner.png" alt="">
+               </div>
+               <div class="feature-info">
+                  <h4>Ménage & entretien</h4>
+                  <p class="feature-description">
+                     Du sol au plafond, coins et recoins en douceur mais sans ménagement ! Selon vos recommandations votre intervenante se charge de l'ensemble de votre intérieur.</p>
+               </div>
+            </div>
+            <div class="col-md-4 col-sm-12 feature-column">
+               <div class="feature-icon">
+                  <!-- <i class="icon-eyeglasses size-2x highlight"></i> -->
+                  <!-- <i class="icon-eyeglasses back-icon"></i> -->
+                  <img src="/frontend/img/assets/vaccume-cleaner.png" alt="">
+               </div>
+               <div class="feature-info">
+                  <h4>Ménage & entretien</h4>
+                  <p class="feature-description">
+                     Du sol au plafond, coins et recoins en douceur mais sans ménagement ! Selon vos recommandations votre intervenante se charge de l'ensemble de votre intérieur.</p>
+               </div>
+            </div>
+            <div class="col-md-4 col-sm-12 feature-column">
+               <div class="feature-icon">
+                  <!-- <i class="icon-eyeglasses size-2x highlight"></i> -->
+                  <!-- <i class="icon-eyeglasses back-icon"></i> -->
+                  <img src="/frontend/img/assets/vaccume-cleaner.png" alt="">
+               </div>
+               <div class="feature-info">
+                  <h4>Ménage & entretien</h4>
+                  <p class="feature-description">
+                     Du sol au plafond, coins et recoins en douceur mais sans ménagement ! Selon vos recommandations votre intervenante se charge de l'ensemble de votre intérieur.</p>
+               </div>
+            </div>
+            <div class="col-md-4 col-sm-12 feature-column">
+               <div class="feature-icon">
+                  <!-- <i class="icon-eyeglasses size-2x highlight"></i> -->
+                  <!-- <i class="icon-eyeglasses back-icon"></i> -->
+                  <img src="/frontend/img/assets/vaccume-cleaner.png" alt="">
+               </div>
+               <div class="feature-info">
+                  <h4>Ménage & entretien</h4>
+                  <p class="feature-description">
+                     Du sol au plafond, coins et recoins en douceur mais sans ménagement ! Selon vos recommandations votre intervenante se charge de l'ensemble de votre intérieur.</p>
+               </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            <!-- <div class="col-md-4 col-sm-12 feature-column">
+               <div class="feature-icon">
+                  <i class="icon-lock-open size-2x highlight"></i>
+                  <i class="icon-lock-open back-icon"></i>
+               </div>
+               <div class="feature-info">
+                  <h4>Fully Responsive</h4>
+                  <p class="feature-description">Vivamus molestie phasellus enim sed orci eu pharetra. Donec posuere nunc vitae tortor sagittis feugiat in non massa.</p>
+               </div>
+            </div>
+            <div class="col-md-4 col-sm-12 feature-column">
+               <div class="feature-icon">
+                  <i class="icon-energy size-2x highlight"></i>
+                  <i class="icon-energy back-icon"></i>
+               </div>
+               <div class="feature-info">
+                  <h4>Fast & Smooth</h4>
+                  <p class="feature-description">Vivamus molestie phasellus enim sed orci eu pharetra. Donec posuere nunc vitae tortor sagittis feugiat in non massa.</p>
+               </div>
+            </div>
+         </div>
+         <div class="row wow fadeInUp">
+            <div class="col-md-4 col-sm-12 feature-column">
+               <div class="feature-icon">
+                  <i class="icon-settings size-2x highlight"></i>
+                  <i class="icon-settings back-icon"></i>
+               </div>
+               <div class="feature-info">
+                  <h4>Seo Optimized </h4>
+                  <p class="feature-description">Vivamus molestie phasellus enim sed orci eu pharetra. Donec posuere nunc vitae tortor sagittis feugiat in non massa.</p>
+               </div>
+            </div>
+            <div class="col-md-4 col-sm-12 feature-column">
+               <div class="feature-icon">
+                  <i class="icon-book-open size-2x highlight"></i>
+                  <i class="icon-book-open back-icon"></i>
+               </div>
+               <div class="feature-info">
+                  <h4>Clean Code</h4>
+                  <p class="feature-description">Vivamus molestie phasellus enim sed orci eu pharetra. Donec posuere nunc vitae tortor sagittis feugiat in non massa.</p>
+               </div>
+            </div>
+            <div class="col-md-4 col-sm-12 feature-column">
+               <div class="feature-icon">
+                  <i class="icon-support size-2x highlight"></i>
+                  <i class="icon-support back-icon"></i>
+               </div>
+               <div class="feature-info">
+                  <h4>Free 24/7 Support</h4>
+                  <p class="feature-description">Vivamus molestie phasellus enim sed orci eu pharetra. Donec posuere nunc vitae tortor sagittis feugiat in non massa.</p>
+               </div>
+            </div>
+         </div> -->
+      </div>
+   </section>
+   <!--End Features Section -->
+   
+   <!-- Start About Section -->
+   <section id="about">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-6 text-left about-text">
+               <h3 class="wow fadeInUp">QUALITÉ & PROXIMITÉ </h3>
+               <p class="wow fadeInUp">Parce que votre satisfaction est au coeur de notre projet, Sagael fait de la proximite l'une des clés de notre relation.</p>
+               <p class="wow fadeInUp">
+                  <a href="#home-revolution-slider">
+                     <button type="button" class="btn btn-primary btn-md devis">En-savoir plus</button>
+                  </a>
+               </p>
+            </div>
+            <div class="col-md-6 wow fadeInUp about-text">
+                  <div class="video-container">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/feJxJe04bFw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>" allowfullscreen></iframe>
+                            </div>
+               <h3 class="wow fadeInUp"> Satisfaction clientèle </h3>
+               <div class="progress-bars">
+                  <p>Données issues des suivis qualités réalisés sur l’ensemble de nos clients</p>
+                  <div class="progress" data-percent="90%">
+                     <div class="progress-bar">
+                        <span class="progress-bar-tooltip">90%</span>
+                     </div>
+                  </div>
+                  <p>Présence en marché</p>
+                  <div class="progress" data-percent="80%">
+                     <div class="progress-bar">
+                        <span class="progress-bar-tooltip">80%</span>
+                     </div>
+                  </div>
+                  <p>Métrique 3</p>
+                  <div class="progress" data-percent="95%">
+                     <div class="progress-bar">
+                        <span class="progress-bar-tooltip">95%</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- End About Section -->
+   
+   <!-- Start Fun Facts Section -->
+   <section id="fun-facts" class="parallax-section-5">
+      <div class="container">
+         <div class="col-md-12 text-center white wow fadeInUp">
+            <h3 class="section-title">Nos chiffres</h3>
+            <p class="subheading">Sagaël en <span class="highlight">chiffres</span> :</p>
+         </div>
+         <div class="counter-row row text-center wow fadeInUp">
+            <div class="col-md-3 col-sm-6 fact-container">
+               <div class="fact">
+                  <span class="counter highlight">570</span>
+                  <h4>Client satisfait</h4>
+               </div>
+            </div>
+            <div class="col-md-3 col-sm-6 fact-container">
+               <div class="fact">
+                  <span class="counter highlight">468</span>
+                  <h4>Projets</h4>
+               </div>
+            </div>
+            <div class="col-md-3 col-sm-6 fact-container">
+               <div class="fact">
+                  <h2 class="counter highlight">874
+                  </h2>
+                  <h4>Autre chiffre</h4>
+               </div>
+            </div>
+            <div class="col-md-3 col-sm-6 fact-container">
+               <div class="fact">
+                  <span class="counter highlight">15</span>
+                  <h4>Prix obtenues</h4>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- End Fun Facts Section -->
+   
+   <!-- Start Team Section -->
+   <section id="team">
+      <div class="container">
+         <div class="col-md-12 text-center wow fadeInUp">
+            <h3 class="section-title">Rencontrer notre équipe.</h3>
+            <p class="subheading">Nos <span class="highlight">idées</span> et chanllenges.</p>
+         </div>
+         <div class="row">
+            <div class="col-md-3 col-sm-3 team-member">
+               <div class="effect effects wow fadeInUp">
+                  <div class="img">
+                     <img src="img/team/team-1.jpg" class="img-responsive" alt="" />
+                     <div class="overlay">
+                        <ul class="expand">
+                           <li class="social-icon">
+                              <a href="#" onClick="return false;">
+                                 <i class="icon-social-facebook"></i>
+                              </a>
+                           </li>
+                           <li class="social-icon">
+                              <a href="#" onClick="return false;">
+                                 <i class="icon-social-twitter"></i>
+                              </a>
+                           </li>
+                           <li class="social-icon">
+                              <a href="#" onClick="return false;">
+                                 <i class=" icon-envelope-open"></i>
+                              </a>
+                           </li>
+                        </ul>
+                        <a class="close-overlay hidden">
+                           x
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="member-info wow fadeInUp">
+                  <h4>Nom Prénom</h4>
+                  <h5 class="highlight">CEO / Fondateur</h5>
+                  <p>Petite description du membre de l'équipe.</p>
+               </div>
+            </div>
+            <div class="col-md-3 col-sm-3 team-member">
+               <div class="effect effects wow fadeInUp">
+                  <div class="img">
+                     <img src="img/team/team-2.jpg" class="img-responsive" alt="" />
+                     <div class="overlay">
+                        <ul class="expand">
+                           <li class="social-icon">
+                              <a href="#" onClick="return false;">
+                                 <i class="icon-social-facebook"></i>
+                              </a>
+                           </li>
+                           <li class="social-icon">
+                              <a href="#" onClick="return false;">
+                                 <i class="icon-social-twitter"></i>
+                              </a>
+                           </li>
+                           <li class="social-icon">
+                              <a href="#" onClick="return false;">
+                                 <i class=" icon-envelope-open"></i>
+                              </a>
+                           </li>
+                        </ul>
+                        <a class="close-overlay hidden">
+                           x
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="member-info wow fadeInUp">
+                  <h4>Nom Prénom</h4>
+                  <h5 class="highlight">CEO / Fondateur</h5>
+                  <p>Petite description du membre de l'équipe.</p>
+               </div>
+            </div>
+            <div class="col-md-3 col-sm-3 team-member">
+               <div class="effect effects wow fadeInUp">
+                  <div class="img">
+                     <img src="img/team/team-3.jpg" class="img-responsive" alt="" />
+                     <div class="overlay">
+                        <ul class="expand">
+                           <li class="social-icon">
+                              <a href="#" onClick="return false;">
+                                 <i class="icon-social-facebook"></i>
+                              </a>
+                           </li>
+                           <li class="social-icon">
+                              <a href="#" onClick="return false;">
+                                 <i class="icon-social-twitter"></i>
+                              </a>
+                           </li>
+                           <li class="social-icon">
+                              <a href="#" onClick="return false;">
+                                 <i class=" icon-envelope-open"></i>
+                              </a>
+                           </li>
+                        </ul>
+                        <a class="close-overlay hidden">
+                           x
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="member-info wow fadeInUp">
+                  <h4>Nom Prénom</h4>
+                  <h5 class="highlight">Chef de projet</h5>
+                  <p>Petite description du membre de l'équipe.</p>
+               </div>
+            </div>
+            <div class="col-md-3 col-sm-3 team-member">
+               <div class="effect effects wow fadeInUp">
+                  <div class="img">
+                     <img src="img/team/team-4.jpg" class="img-responsive" alt="" />
+                     <div class="overlay">
+                        <ul class="expand">
+                           <li class="social-icon">
+                              <a href="#" onClick="return false;">
+                                 <i class="icon-social-facebook"></i>
+                              </a>
+                           </li>
+                           <li class="social-icon">
+                              <a href="#" onClick="return false;">
+                                 <i class="icon-social-twitter"></i>
+                              </a>
+                           </li>
+                           <li class="social-icon">
+                              <a href="#" onClick="return false;">
+                                 <i class=" icon-envelope-open"></i>
+                              </a>
+                           </li>
+                        </ul>
+                        <a class="close-overlay hidden">
+                           x
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="member-info wow fadeInUp">
+                  <h4>Nom Prénom</h4>
+                  <h5 class="highlight">Developpeur Web</h5>
+                  <p>Petite description du membre de l'équipe.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- End Team Section -->
+   
+   <!-- Start Quote Section -->
+   <section id="quote" class="parallax-section-6">
+      <div class="container">
+         <div class="row wow fadeInUp">
+            <div class="col-lg-12 wow fadeInUp" style="z-index:3">
+               <div id="quote-slider" class="owl-carousel">
+                  <div>
+                     <blockquote>
+                        <i class="icon-left ion-quote ion-2x highlight"></i>
+                        <span> Intervenantes agréables et ponctuelles. </span>
+                        <i class="icon-right ion-quote ion-2x highlight"></i>
+                     </blockquote>
+                     <h4 class="quote-author highlight"> Jean-Marc B</h4>
+                  </div>
+                  <div>
+                     <blockquote>
+                        <i class="icon-left ion-quote ion-2x highlight"></i>
+                        <span> Nous avons instauré une réelle relation de confiance </span>
+                        <i class="icon-right ion-quote ion-2x highlight"></i>
+                     </blockquote>
+                     <h4 class="quote-author highlight">Annick V</h4>
+                  </div>
+                  <div>
+                     <blockquote>
+                        <i class="icon-left ion-quote ion-2x highlight"></i>
+                        <span> Nous avons instauré une réelle relation de confiance. </span>
+                        <i class="icon-right ion-quote ion-2x highlight"></i>
+                     </blockquote>
+                     <h4 class="quote-author highlight">Valérie J</h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- End Quote Section -->
+   
+   <!-- Start Portfolio Section -->
+   <section id="portfolio" style="position: relative;">
+      <div class="separator"></div>
+      <div class="container-fluid">
+         <div class="col-md-12 text-center">
+            <h3 class="section-title wow fadeInUp">Nos produits.</h3>
+            <p class="subheading wow fadeInUp">Nos produits et services <span class="highlight">changent vos vis vers le meilleur</span>.</p>
+         </div>
+         <div id="filters-container-fullwidth" class="cbp-l-filters-alignCenter wow fadeInUp">
+            <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">All
+               <div class="cbp-filter-counter"></div>
+            </div>
+            <div data-filter=".identity" class="cbp-filter-item">Identity
+               <div class="cbp-filter-counter"></div>
+            </div>
+            <div data-filter=".web-design" class="cbp-filter-item">Web Design
+               <div class="cbp-filter-counter"></div>
+            </div>
+            <div data-filter=".graphic" class="cbp-filter-item">Graphic
+               <div class="cbp-filter-counter"></div>
+            </div>
+            <div data-filter=".logo" class="cbp-filter-item">Logo
+               <div class="cbp-filter-counter"></div>
+            </div>
+            <div data-filter=".motion" class="cbp-filter-item">Motion
+               <div class="cbp-filter-counter"></div>
+            </div>
+         </div>
+         <div id="grid-container-fullwidth" class="cbp-l-grid-fullScreen">
+            <ul>
+               <li class="cbp-item effect effects identity logo">
+                  <div class="img">
+                     <img src="img/backgrounds/solar-panel-bg-1-small.jpg.png" class="img-responsive" alt="" />
+                     <div class="overlay">
+                        <ul class="expand">
+                           <li class="cbp-l-icon">
+                              <a href="img/backgrounds/solar-panel-bg-1.jpg" class="cbp-lightbox" data-title="Dashboard<br>by Visual">
+                                 <i class="icon-magnifier"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-icon">
+                              <a href="projects/project1.html" class="cbp-singlePage">
+                                 <i class="icon-link"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-caption-title">Service de ménage</li>
+                           <li class="cbp-l-caption-desc">équipe spécialisé</li>
+                        </ul>
+                     </div>
+                  </div>
+               </li>
+               <li class="cbp-item effect effects identity logo">
+                  <div class="img">
+                     <img src="img/backgrounds/solar-panel-bg-1-small.jpg.png" class="img-responsive" alt="" />
+                     <div class="overlay">
+                        <ul class="expand">
+                           <li class="cbp-l-icon">
+                              <a href="img/backgrounds/solar-panel-bg-1.jpg" class="cbp-lightbox" data-title="Dashboard<br>by Visual">
+                                 <i class="icon-magnifier"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-icon">
+                              <a href="projects/project1.html" class="cbp-singlePage">
+                                 <i class="icon-link"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-caption-title">Service de ménage</li>
+                           <li class="cbp-l-caption-desc">équipe spécialisé</li>
+                        </ul>
+                     </div>
+                  </div>
+               </li>
+               <li class="cbp-item effect effects identity logo">
+                  <div class="img">
+                     <img src="img/backgrounds/solar-panel-bg-1-small.jpg.png" class="img-responsive" alt="" />
+                     <div class="overlay">
+                        <ul class="expand">
+                           <li class="cbp-l-icon">
+                              <a href="img/backgrounds/solar-panel-bg-1.jpg" class="cbp-lightbox" data-title="Dashboard<br>by Visual">
+                                 <i class="icon-magnifier"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-icon">
+                              <a href="projects/project1.html" class="cbp-singlePage">
+                                 <i class="icon-link"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-caption-title">Service de ménage</li>
+                           <li class="cbp-l-caption-desc">équipe spécialisé</li>
+                        </ul>
+                     </div>
+                  </div>
+               </li>
+               <li class="cbp-item effect effects identity logo">
+                  <div class="img">
+                     <img src="img/backgrounds/solar-panel-bg-1-small.jpg.png" class="img-responsive" alt="" />
+                     <div class="overlay">
+                        <ul class="expand">
+                           <li class="cbp-l-icon">
+                              <a href="img/backgrounds/solar-panel-bg-1.jpg" class="cbp-lightbox" data-title="Dashboard<br>by Visual">
+                                 <i class="icon-magnifier"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-icon">
+                              <a href="projects/project1.html" class="cbp-singlePage">
+                                 <i class="icon-link"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-caption-title">Service de ménage</li>
+                           <li class="cbp-l-caption-desc">équipe spécialisé</li>
+                        </ul>
+                     </div>
+                  </div>
+               </li>
+               <li class="cbp-item effect effects identity logo">
+                  <div class="img">
+                     <img src="img/backgrounds/solar-panel-bg-1-small.jpg.png" class="img-responsive" alt="" />
+                     <div class="overlay">
+                        <ul class="expand">
+                           <li class="cbp-l-icon">
+                              <a href="img/backgrounds/solar-panel-bg-1.jpg" class="cbp-lightbox" data-title="Dashboard<br>by Visual">
+                                 <i class="icon-magnifier"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-icon">
+                              <a href="projects/project1.html" class="cbp-singlePage">
+                                 <i class="icon-link"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-caption-title">Service de ménage</li>
+                           <li class="cbp-l-caption-desc">équipe spécialisé</li>
+                        </ul>
+                     </div>
+                  </div>
+               </li>
+               <li class="cbp-item effect effects identity logo">
+                  <div class="img">
+                     <img src="img/backgrounds/solar-panel-bg-1-small.jpg.png" class="img-responsive" alt="" />
+                     <div class="overlay">
+                        <ul class="expand">
+                           <li class="cbp-l-icon">
+                              <a href="img/backgrounds/solar-panel-bg-1.jpg" class="cbp-lightbox" data-title="Dashboard<br>by Visual">
+                                 <i class="icon-magnifier"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-icon">
+                              <a href="projects/project1.html" class="cbp-singlePage">
+                                 <i class="icon-link"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-caption-title">Service de ménage</li>
+                           <li class="cbp-l-caption-desc">équipe spécialisé</li>
+                        </ul>
+                     </div>
+                  </div>
+               </li>
+               <li class="cbp-item effect effects identity logo">
+                  <div class="img">
+                     <img src="img/backgrounds/solar-panel-bg-1-small.jpg.png" class="img-responsive" alt="" />
+                     <div class="overlay">
+                        <ul class="expand">
+                           <li class="cbp-l-icon">
+                              <a href="img/backgrounds/solar-panel-bg-1.jpg" class="cbp-lightbox" data-title="Dashboard<br>by Visual">
+                                 <i class="icon-magnifier"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-icon">
+                              <a href="projects/project1.html" class="cbp-singlePage">
+                                 <i class="icon-link"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-caption-title">Service de ménage</li>
+                           <li class="cbp-l-caption-desc">équipe spécialisé</li>
+                        </ul>
+                     </div>
+                  </div>
+               </li>
+               <li class="cbp-item effect effects identity logo">
+                  <div class="img">
+                     <img src="img/backgrounds/solar-panel-bg-1-small.jpg.png" class="img-responsive" alt="" />
+                     <div class="overlay">
+                        <ul class="expand">
+                           <li class="cbp-l-icon">
+                              <a href="img/backgrounds/solar-panel-bg-1.jpg" class="cbp-lightbox" data-title="Dashboard<br>by Visual">
+                                 <i class="icon-magnifier"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-icon">
+                              <a href="projects/project1.html" class="cbp-singlePage">
+                                 <i class="icon-link"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-caption-title">Service de ménage</li>
+                           <li class="cbp-l-caption-desc">équipe spécialisé</li>
+                        </ul>
+                     </div>
+                  </div>
+               </li>
+               <li class="cbp-item effect effects identity logo">
+                  <div class="img">
+                     <img src="img/backgrounds/solar-panel-bg-1-small.jpg.png" class="img-responsive" alt="" />
+                     <div class="overlay">
+                        <ul class="expand">
+                           <li class="cbp-l-icon">
+                              <a href="img/backgrounds/solar-panel-bg-1.jpg" class="cbp-lightbox" data-title="Dashboard<br>by Visual">
+                                 <i class="icon-magnifier"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-icon">
+                              <a href="projects/project1.html" class="cbp-singlePage">
+                                 <i class="icon-link"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-caption-title">Service de ménage</li>
+                           <li class="cbp-l-caption-desc">équipe spécialisé</li>
+                        </ul>
+                     </div>
+                  </div>
+               </li>
+               <li class="cbp-item effect effects identity logo">
+                  <div class="img">
+                     <img src="img/backgrounds/solar-panel-bg-1-small.jpg.png" class="img-responsive" alt="" />
+                     <div class="overlay">
+                        <ul class="expand">
+                           <li class="cbp-l-icon">
+                              <a href="img/backgrounds/solar-panel-bg-1.jpg" class="cbp-lightbox" data-title="Dashboard<br>by Visual">
+                                 <i class="icon-magnifier"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-icon">
+                              <a href="projects/project1.html" class="cbp-singlePage">
+                                 <i class="icon-link"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-caption-title">Service de ménage</li>
+                           <li class="cbp-l-caption-desc">équipe spécialisé</li>
+                        </ul>
+                     </div>
+                  </div>
+               </li>
+               <li class="cbp-item effect motion">
+                  <div class="img">
+                     <img src="img/backgrounds/solar-panel-bg-1-small.jpg.png" class="img-responsive" alt="" />
+                     <div class="overlay">
+                        <ul class="expand">
+                           <li class="cbp-l-icon">
+                              <a href="img/backgrounds/solar-panel-bg-1.jpg" class="cbp-lightbox" data-title="Dashboard<br>by Visual">
+                                 <i class="icon-magnifier"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-icon">
+                              <a href="projects/project1.html" class="cbp-singlePage">
+                                 <i class="icon-link"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-caption-title">Service de ménage</li>
+                           <li class="cbp-l-caption-desc">équipe spécialisé</li>
+                        </ul>
+                     </div>
+                  </div>
+               </li>
+               <li class="cbp-item effect effects logo">
+                  <div class="img">
+                     <img src="img/backgrounds/solar-panel-bg-1-small.jpg.png" class="img-responsive" alt="" />
+                     <div class="overlay">
+                        <ul class="expand">
+                           <li class="cbp-l-icon">
+                              <a href="img/backgrounds/solar-panel-bg-1.jpg" class="cbp-lightbox" data-title="Dashboard<br>by Visual">
+                                 <i class="icon-magnifier"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-icon">
+                              <a href="projects/project1.html" class="cbp-singlePage">
+                                 <i class="icon-link"></i>
+                              </a>
+                           </li>
+                           <li class="cbp-l-caption-title">Service de ménage</li>
+                           <li class="cbp-l-caption-desc">équipe spécialisé</li>
+                        </ul>
+                     </div>
+                  </div>
+               </li>
+            </ul>
+         </div>
+         <div class="cbp-l-loadMore-button">
+            <a href="projects/loadMore.html" class="cbp-l-loadMore-button-link wow fadeInUp">
+               SHOW ME MORE
+            </a>
+            <!-- Portfolio AJAX load more button will be functional only on your server. Upload to your server when testing. -->
+         </div>
+      </div>
+   </section>
+   <!-- End Portfolio Section -->
+   
+   <!-- Start Get Connected -->
+   <section id="services" class="parallax-section-9">
+      <div class="container">
+         <div class="col-md-12 text-center">
+            <h3 class="section-title wow fadeInUp">Nos engagements.</h3>
+            <p class="subheading wow fadeInUp">Nous mettons <span class="highlight">notre expertise</span> à votre disposition.</p>
+         </div>
+         <div class="row features-row wow fadeInUp">
+            <div class="row features-row wow fadeInUp">
+               <div class="col-md-4 col-sm-12 feature-column">
+                  <div class="feature-icon">
+                     <!-- <i class="icon-eyeglasses size-2x highlight"></i> -->
+                     <!-- <i class="icon-eyeglasses back-icon"></i> -->
+                     <img src="/frontend/img/assets/vaccume-cleaner.png" alt="">
+                  </div>
+                  <div class="feature-info">
+                     <h4>Ménage & entretien</h4>
+                     <p class="feature-description">
+                        Du sol au plafond, coins et recoins en douceur mais sans ménagement ! Selon vos recommandations votre intervenante se charge de l'ensemble de votre intérieur.</p>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-12 feature-column">
+                  <div class="feature-icon">
+                     <!-- <i class="icon-eyeglasses size-2x highlight"></i> -->
+                     <!-- <i class="icon-eyeglasses back-icon"></i> -->
+                     <img src="/frontend/img/assets/vaccume-cleaner.png" alt="">
+                  </div>
+                  <div class="feature-info">
+                     <h4>Ménage & entretien</h4>
+                     <p class="feature-description">
+                        Du sol au plafond, coins et recoins en douceur mais sans ménagement ! Selon vos recommandations votre intervenante se charge de l'ensemble de votre intérieur.</p>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-12 feature-column">
+                  <div class="feature-icon">
+                     <!-- <i class="icon-eyeglasses size-2x highlight"></i> -->
+                     <!-- <i class="icon-eyeglasses back-icon"></i> -->
+                     <img src="/frontend/img/assets/vaccume-cleaner.png" alt="">
+                  </div>
+                  <div class="feature-info">
+                     <h4>Ménage & entretien</h4>
+                     <p class="feature-description">
+                        Du sol au plafond, coins et recoins en douceur mais sans ménagement ! Selon vos recommandations votre intervenante se charge de l'ensemble de votre intérieur.</p>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-12 feature-column">
+                  <div class="feature-icon">
+                     <!-- <i class="icon-eyeglasses size-2x highlight"></i> -->
+                     <!-- <i class="icon-eyeglasses back-icon"></i> -->
+                     <img src="/frontend/img/assets/vaccume-cleaner.png" alt="">
+                  </div>
+                  <div class="feature-info">
+                     <h4>Ménage & entretien</h4>
+                     <p class="feature-description">
+                        Du sol au plafond, coins et recoins en douceur mais sans ménagement ! Selon vos recommandations votre intervenante se charge de l'ensemble de votre intérieur.</p>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-12 feature-column">
+                  <div class="feature-icon">
+                     <!-- <i class="icon-eyeglasses size-2x highlight"></i> -->
+                     <!-- <i class="icon-eyeglasses back-icon"></i> -->
+                     <img src="/frontend/img/assets/vaccume-cleaner.png" alt="">
+                  </div>
+                  <div class="feature-info">
+                     <h4>Ménage & entretien</h4>
+                     <p class="feature-description">
+                        Du sol au plafond, coins et recoins en douceur mais sans ménagement ! Selon vos recommandations votre intervenante se charge de l'ensemble de votre intérieur.</p>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-12 feature-column">
+                  <div class="feature-icon">
+                     <!-- <i class="icon-eyeglasses size-2x highlight"></i> -->
+                     <!-- <i class="icon-eyeglasses back-icon"></i> -->
+                     <img src="/frontend/img/assets/vaccume-cleaner.png" alt="">
+                  </div>
+                  <div class="feature-info">
+                     <h4>Ménage & entretien</h4>
+                     <p class="feature-description">
+                        Du sol au plafond, coins et recoins en douceur mais sans ménagement ! Selon vos recommandations votre intervenante se charge de l'ensemble de votre intérieur.</p>
+                  </div>
+               </div>
+      </div>
+   </section>
+   <!-- End Services Section -->
+   
+   <!-- Start Clients Section -->
+   <section id="clients">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12 text-center">
+               <h3 class="section-title wow fadeInUp">Clients récents.</h3>
+               <p class="subheading wow fadeInUp">Voici quelque uns de nos meilleurs clients.</p>
+            </div>
+            <div class="clients">
+               <div id="client-slider" class="owl-carousel">
+                  <div class="item">
+                     <img src="img/clients/logo-1-dark.png" alt="" />
+                  </div>
+                  <div class="item">
+                     <img src="img/clients/logo-2-dark.png" alt="" />
+                  </div>
+                  <div class="item">
+                     <img src="img/clients/logo-3-dark.png" alt="" />
+                  </div>
+                  <div class="item">
+                     <img src="img/clients/logo-4-dark.png" alt="" />
+                  </div>
+                  <div class="item">
+                     <img src="img/clients/logo-5-dark.png" alt="" />
+                  </div>
+                  <div class="item">
+                     <img src="img/clients/logo-6-dark.png" alt="" />
+                  </div>
+                  <div class="item">
+                     <img src="img/clients/logo-7-dark.png" alt="" />
+                  </div>
+                  <div class="item">
+                     <img src="img/clients/logo-8-dark.png" alt="" />
+                  </div>
+                  <div class="item">
+                     <img src="img/clients/logo-9-dark.png" alt="" />
+                  </div>
+                  <div class="item">
+                     <img src="img/clients/logo-10-dark.png" alt="" />
+                  </div>
+                  <div class="item">
+                     <img src="img/clients/logo-11-dark.png" alt="" />
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- End Clients Section -->
+   
+   <!-- Start Price List -->
+   <section id="price-list">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12 text-center">
+               <h3 class="section-title wow fadeInUp"> Nos tarifs </h3>
+               <p class="subheading wow fadeInUp">Choisissez la formule qui vous convient le plus.</p>
+            </div>
+            <div class="pricing_table">
+               <div class="container">
+                  <div class="col-md-3 col-sm-6">
+                     <div class="planbox">
+                        <div class="title">
+                           <h4><strong>Service à la vie quotidienne</strong></h4>
+                        </div>
+                        <div class="prices">
+                           <strong>€20.95</strong>
+                           <b>Après réduction d'impôts €10.48</b>
+                           <a href="#">
+                              Choisir
+                           </a>
+                        </div>
+                        <ul>
+                           <li><strong>€20.95</strong> Ménage, Repassage, Lavage</li>
+                           <li><strong>€20.95</strong> Préparation de repas à domicile</li>
+                           <li><strong>€28.00</strong> Ménage, Repassage, Lavage ponctuel</li>
+                        </ul>
+                     </div>
+                  </div>
+                  <!-- end plan -->
+                  
+                  <div class="col-md-3 col-sm-6">
+                     <div class="planbox highlight">
+                        <div class="title">
+                           <h4 class="caps"><strong>Service à la famille</strong></h4>
+                        </div>
+                        <div class="prices">
+                           <strong>€20.95</strong>
+                           <b>Après réduction d'impôts €10.48</b>
+                           <a href="#">
+                              Choisir
+                           </a>
+                        </div>
+                        <ul>
+                           <li><strong>€20.95</strong> Soutien scolaire à domicile</li>
+                           <li><strong>€20.95</strong> Assistance informatique et internet</li>
+                           <li><strong>€28.00</strong> Assistance administrative</li>
+                           <li><strong>€28.00</strong> Garde d'enfants à domicile de plus de 3 ans</li>
+                        </ul>
+                     </div>
+                  </div>
+                  <!-- end plan -->
+                  
+                  <div class="col-md-3 col-sm-6">
+                     <div class="planbox">
+                        <div class="title">
+                           <h4 class="caps"><strong>Frais supplémentaires</strong></h4>
+                        </div>
+                        <div class="prices">
+                           <strong>€20.00</strong>
+                           <b>Après réduction d'impôts €10.00</b>
+                           <a href="#">
+                              Choisir
+                           </a>
+                        </div>
+                        <ul>
+                           <li><strong>Frais de gestion</strong></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <!-- end plan -->
+               </div>
+            </div>
+            <!-- end hosting plans -->
+         </div>
+      </div>
+   </section>
+   <!-- End Price List -->
+   
+   <!-- Start Call to Action 1 -->
+   <section id="call-to-action-1">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12 text-center">
+               <h3 class="wow fadeInUp">Besoin de renseignements ?</h3>
+               <p class="wow fadeInUp">Vous n'avez avez qu'à remplir le formulaire et notre équipe va vous répondre dans les meilleurs délais. </p>
+               <a href="#contact" class="btn btn-primary btn-scroll">
+                  Contacter-nous
+               </a>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- End Call to Action 1 -->
+   
+   <!-- Start Testimonials Section -->
+   <section id="testimonials" class="parallax-section-4">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12 text-center">
+               <h3 class="section-title white wow fadeInUp">Retour de nos clients.</h3>
+               <p class="subheading grey wow fadeInUp">Ce que nos clients pensent du travail avec nous</p>
+            </div>
+            <div class="col-md-12 text-center wow fadeInUp">
+               <div id="owl-testimonials" class="owl-carousel">
+                  <div>
+                     <div class="testimonial">
+                        <i class="icon-left ion-quote ion-2x highlight"></i>
+                        <span> Intervenantes agréables et ponctuelles. </span>
+                        <i class="icon-right ion-quote ion-2x highlight"></i>
+                     </div>
+                     <div class="testimonial-name">
+                        <img src="img/clients/client-1.png" alt="client">
+                        <h4 class="white">Jean-Marc B.</h4>
+                        <a href="#">
+                           Particulier
+                        </a>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="testimonial">
+                        <i class="icon-left ion-quote ion-2x highlight"></i>
+                        <span> Nous avons instauré une réelle relation de confiance. </span>
+                        <i class="icon-right ion-quote ion-2x highlight"></i>
+                     </div>
+                     <div class="testimonial-name">
+                        <img src="img/clients/client-2.png" alt="client">
+                        <h4 class="white">Annick V.</h4>
+                        <a href="#">
+                           Particulier
+                        </a>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="testimonial">
+                        <i class="icon-left ion-quote ion-2x highlight"></i>
+                        <span> Nous avons instauré une réelle relation de confiance. </span>
+                        <i class="icon-right ion-quote ion-2x highlight"></i>
+                     </div>
+                     <div class="testimonial-name">
+                        <img src="img/clients/client-3.png" alt="client">
+                        <h4 class="white">Valérie J</h4>
+                        <a href="#">
+                           Particulier
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- End Testimonials Section -->
+   
+   <!-- Start Contact Form Section -->
+   <section id="contact">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12 text-center">
+               <h3 class="section-title wow fadeInUp">Contactez-nous</h3>
+               <p class="subheading wow fadeInUp"> Votre avis nous intéresse. </p>
+            </div>
+            <div class="col-md-7 wow fadeInUp">
+               <div id="message"></div>
+               <!-- Contact Form will be functional only on your server. Upload to your server when testing. -->
+               <form method="post" action="php/contact-form.php.htm" name="contactform" id="contactform">
+                  <fieldset>
+                     <input name="name" type="text" id="name" placeholder="Nom"/>
+                     <input name="email" type="text" id="email" placeholder="Email"/>
+                     <input name="subject" type="text" id="subject" placeholder="Objet"/>
+                  </fieldset>
+                  <fieldset>
+                     <textarea name="comments" cols="40" rows="3" id="comments" placeholder="Message"></textarea>
+                  </fieldset>
+                  <input type="submit" class="submit" id="submit" value="Envoyer" />
+               </form>
+            </div>
+            <div class="col-md-5 wow fadeInLeft">
+               <h4> Amérique du nord : </h4>
+               <address>
+               première ligne d'adresse<br>
+               deuxième ligne d'adresse<br>
+               <abbr title="Phone">P:</abbr> (+33) 456-7890
+               </address>
+               <h4> Europe : </h4>
+               <address>
+               Première ligne d'adresse<br>
+               Deuxième ligne d'adresse<br>
+               <abbr title="Phone">Phone:</abbr> (+33) 456-7890
+               </address>
+               <h4> Contactez-nous : </h4>
+               <address>
+               <abbr title="Phone">
+               <strong> Phone </strong>
+               </abbr> : (+33) 456-7890 <br>
+               <abbr title="Fax">
+               <strong>Fax </strong>
+               </abbr> : (+33) 456-7890 <br>
+               <abbr title="Email">
+               <strong>Email </strong>
+               </abbr> : email@email.com
+               </address>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- End Contact Form Section -->
+   
+   <!-- Start Google Map Section -->
+   <!-- <div id="map"></div> -->
+   <!-- End Google Map Section -->
+   
+   <!-- Start Footer 1 -->
+   <footer id="footer">
+      <!-- End Footer Widgets -->
+      
+      <div class="footer-copyright">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 text-center">
+                  <h3 class="section-title wow fadeInUp">DEALECO</h3>
+                  <p class="wow fadeInUp"> Deal-Eco © 2022 
+                  <a href="#" target="_blank">hypertext-link</a> 
+                  </p>
+                  <ul class="social-icons subheading">
+                     <li>
+                        <a href="#">
+                           <i class="icon ion-social-twitter"></i>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <i class="icon ion-social-facebook"></i>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <i class="icon ion-social-googleplus"></i>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <i class="icon ion-social-instagram-outline"></i>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <i class="icon ion-social-pinterest"></i>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <i class="icon ion-social-skype"></i>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <i class="icon ion-social-linkedin"></i>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <i class="icon ion-social-dropbox"></i>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <i class="icon ion-social-vimeo"></i>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <i class="icon ion-social-youtube"></i>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Footer Copyright -->
+      
+   </footer>
+   <!-- End Footer 1 -->
+   
+   <!-- Start Back To Top -->
+   <a id="back-to-top">
+      <i class="icon ion-chevron-up"></i>
+   </a>
+   <!-- End Back To Top -->
+   
+</div>
+<!-- End Site Wrapper -->
+<!-- jQuery -->
+<script type="text/javascript" src="js/plugins/jquery.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/plugins/moderniz.min.js"></script>
+<script type="text/javascript" src="js/plugins/smoothscroll.min.js"></script>
+<script type="text/javascript" src="js/no-ui-slider/jquery.nouislider.all.min.js"></script>
+<script type="text/javascript" src="js/plugins/revslider.min.js"></script>
+<script type="text/javascript" src="js/plugins/waypoints.min.js"></script>
+<script type="text/javascript" src="js/plugins/parallax.min.js"></script>
+<script type="text/javascript" src="js/plugins/easign1.3.min.js"></script>
+<script type="text/javascript" src="js/plugins/cubeportfolio.min.js"></script>
+<script type="text/javascript" src="js/plugins/owlcarousel.min.js"></script>
+<script type="text/javascript" src="js/plugins/tweetie.min.js"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js"></script>
+<script type="text/javascript" src="js/plugins/gmap3.min.js"></script>
+<script type="text/javascript" src="js/plugins/wow.min.js"></script>
+<script type="text/javascript" src="js/plugins/counterup.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
